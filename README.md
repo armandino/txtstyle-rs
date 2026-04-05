@@ -16,7 +16,7 @@ to make output of console programs prettier.
 ## Install
 
 ```sh
-cargo install --git https://github.com/armandino/TxtStyle
+cargo install txtstyle
 ```
 
 Or from a local clone:
@@ -97,8 +97,8 @@ Print help
 ## Building from source
 
 ```sh
-git clone https://github.com/armandino/TxtStyle
-cd TxtStyle
+git clone https://github.com/armandino/txtstyle-rs
+cd txtstyle-rs
 cargo build --release
 # binary at target/release/txts
 ```
