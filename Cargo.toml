@@ -1,0 +1,28 @@
+[package]
+name = "txtstyle"
+version = "1.0.0"
+edition = "2024"
+description = "Command-line tool for colorizing output of log files and console programs"
+license = "Apache-2.0"
+repository = "https://github.com/armandino/txtstyle-rs"
+readme = "README.md"
+keywords = ["color", "log", "ansi", "cli", "terminal"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "txtstyle"
+path = "src/lib.rs"
+
+[[bin]]
+name = "txts"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+regex = "1"
+dirs = "5"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
